@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Sistem Informasi Data Mahasiswa - Praktikum 1 - Kelas E
+        </h1>
+        <p>
+            Sistem untuk mengetahui dan mengelola data mahasiswa
+        </p>
+        <img src="DSC_7591.JPG" width=100 alt="foto anjay">
+    </header>
+     <hr>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#informasi">Informasi Mahasiswa</a>
+                </li>
+                <li>
+                    <a href="#daftar-Mahasiswa">Daftar Mahasiswa</a>
+                </li>
+                <li>
+                    <a href="#form-tambah">Tambah Mahasiswa Baru</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <main>
+            <section>
+                <h2>
+                    Informasi Sistem
+                </h2>
+                <p>
+                    Ini Informasi 
+                </p>
+                <article>
+                    <h3>
+                        Informasi
+                    </h3>
+                    <p>
+                        <ol>
+                            <li><a href="https://share.google/nbkCMOHfa5JcRhbM7">Data Diri</a></li>
+                            <li><a href="https://share.google/yRmWWjF9iECYMMo8e">Alamat</a></li>
+                            <li><a href="https://unila.ac.id">Tempat Kuliah</a></li>
+                        </ol>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <section id="daftar-mahasiswa">
+                <h2>
+                    Daftar Mahasiswa Aktif
+                </h2>
+                <p>
+                    Data Mahasiswa aktif
+                </p>
+                <table border="1" cellpading="8" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Foto</th>
+                            <th>NPM</th>
+                            <th>Nama Lengkap</th>
+                            <th>Program Studi</th>
+                            <th>Angkatan</th>
+                            <th>Email</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    <img src="DSC_7591.JPG" width="100" alt="foto saya">
+                                </td>
+                                <td>
+                                    2415061022
+                                </td>
+                                <td>
+                                    Fathan Rizqi Syahbana
+                                </td>
+                                <td>
+                                    Teknik Informatika
+                                </td>
+                                <td>
+                                    2024
+                                </td>
+                                <td>
+                                    fathansyahbana15@gmail.com
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2
+                                </td>
+                                <td>
+                                    <img src="" width="100" alt="foto saya">
+                                </td>
+                                <td>
+                                    2615081044
+                                </td>
+                                <td>
+                                    Ghania Mahaira Syahbana
+                                </td>
+                                <td>
+                                    Teknik Informatika
+                                </td>
+                                <td>
+                                    2026
+                                </td>
+                                <td>
+                                    ghaniamahira@gmail.com
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    3
+                                </td>
+                                <td>
+                                    <img src="" width="100" alt="foto saya">
+                                </td>
+                                <td>
+                                    2415061033
+                                </td>
+                                <td>
+                                    Muhammad Iqbal Syahbana
+                                </td>
+                                <td>
+                                    Teknik Informatika
+                                </td>
+                                <td>
+                                    2019
+                                </td>
+                                <td>
+                                    iqbalsyahbana@gmail.com
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </thead>
+                </table>
+            </section>
+
+            <hr>
+
+            <section id="form-tambah">
+                <h2>
+                    Tambah Mahasiswa Baru
+                </h2>
+                <p>
+                    ini adalah wadah untuk menambah mahasiswa
+                </p>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>
+                            Tambah Mahasiswa Baru
+                        </legend>
+                    <p>
+                        <label for="npm">Nomor Pokok Mahasiswa (NPM)</label>
+                        <br>
+                        <input type="text" name="npm" id="npm" placeholder="2415061022" required pattern="[0-9]{8.12}" title="NPM harus berupa angka 8-12 digit">
+                        <br> <small>masukan npm</small>
+                    </p>
+                    <p>
+                        <label for="nama">Nama Lengkap</label>
+                        <br>
+                        <input type="text" name="nama" id="nama" placeholder="Fathan Rizqi Syahbana" minlength="3" maxlength="100">
+                        <br> <small>Masukkan nama</small>
+                    </p>
+                    <p>
+                        <label for="program_studi">Program Studi</label>
+                        <br>
+                        <select name="program_studi" id="program_studi" required>
+                            <option value="">Pilih Program Studi</option>
+                            <option value="Teknik Informatika">Teknik Informatika</option>
+                        </select>
+                        <br> <small>pilih prodi</small>
+                    </p>
+                    <p>
+                        <label for="angkatan">Angkatan</label>
+                        <br>
+                        <input type="number" name="angkatan" id="angkatan" placeholder="2024" required min="2018" max="2026">
+                        <br> <small>Masukan Angkatan</small>
+                    </p>
+                    <p>
+                        <label for="email">Alamat Email</label>
+                        <br>
+                        <input type="email" name="email" id="email" placeholder="fathansyahbana15@gmail.com" required>
+                        <br> <small>Masukkan email</small>
+                    </p>
+                    <p>
+                        <button type="submit">Simpan Data Mahasiswa</button>
+                        <button type="reset">Reset Formulir</button>
+                    </p>
+
+                    </fieldset>
+                  
+                </form>
+            </section>
+        </main>
+</body>
+</html>
